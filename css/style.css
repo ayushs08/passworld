@@ -13,12 +13,9 @@ body, html{
 	margin: 0;
 }
 .nav{
-	/*border: 1px solid blue;*/
 	height: 10%;
-	margin-bottom: 5vh;
 }
 ul{
-	/*border: 1px solid orange;*/
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -34,16 +31,20 @@ ul{
 	font-size: 3em;
 }
 .main{
-	/*border: 1px solid red;*/
 	display: flex;
-	width: 80%;
+	width: 90%;
+	height: 90%;
 	margin: auto;
 }
-.main *{
-	height: 29em;
+.col-left{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .pattern{
 	width: 29em;
+	height: 29em;
 	background: #282c35;
 	display: flex;
 	justify-content: center;
@@ -54,22 +55,91 @@ ul{
 	display: block;
 }
 .tip{
-	/*border: 1px solid white;*/
 	height: auto;
 	position: absolute;
 	top: 2em;
 }
 .flavors{
-	/*border: 1px solid orange;*/
-	width: calc(100% - 29em);
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	position: relative;
 }
-.password{
-	/*border: 1px solid blue;*/
-	height: 30%;
-	width: 80%;
-	margin: auto;
+.flavors *{
+	height: auto;
 }
+.flavors ul{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5em 0 1em 0;
+}
+.flavors ul li{
+	height: auto;
+	width: 16.8em;
+	text-align: center;
+	margin: 1em 2.75em; 
+	padding: 1em;
+	cursor: pointer;
+}
+.flavors .or{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2em 0;
+}
+.flavors .or .rule{
+	width: 10%;
+	margin: 0 1em;
+	border-top: 1px solid white;
+}
+.password{
+	/*border: 1px solid orange;*/
+	height: 40%;
+}
+
+
+
+
+input{
+  font-size: 1.5em;
+  margin-top: 1em;
+  width: 11.5em;
+  transition: all, 0.3s;
+  text-align: center;
+  padding: 0.5em;
+  color: #f44336;
+  background: none;
+  border: none;
+  border: 1px solid #1a9;
+  outline: none;
+}
+.label-text{
+  font-size: 1.5em;
+  display: block;
+  transform: translateY(-1.7em);
+  outline: none;
+  transition: all, 0.3s;
+  color: #3b9;
+  cursor: text;
+  text-align: center;
+}
+input:focus{
+  width: 12em;
+}
+input:focus + .label-text{
+  transform: translateY(-4.2em);
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
+}
+input:valid{
+	width: 12em;
+}
+input:valid + .label-text{
+  transform: translateY(-4.2em);
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
+}	
