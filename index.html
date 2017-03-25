@@ -23,17 +23,33 @@
 		</ul>
 	</div>
 	<div class="main">
-		<div class="pattern">
-			<div class="tip">Step 1: Draw your pattern</div>
-			<div id="patternHolder"></div>
+		<div class="col-left">
+			<div class="pattern">
+				<div class="tip">Step 1: Draw your pattern</div>
+				<div id="patternHolder"></div>
+			</div>
 		</div>
-		<div class="flavors">
-			<div class="tip">Step 2: Pick your flavor</div>
-			<ul>
-				<li></li>
-			</ul>
+		<div class="col-right">
+			<div class="flavors">
+				<div class="tip">Step 2: Pick your flavor</div>
+				<ul>
+					<li ng-repeat="color in colors" style="border: 1px solid {{ color }}; color: {{ color }}"
+						ng-mouseover="console.log('mouseover')">
+						{{ color }}
+					</li>
+				</ul>
+				<div class="or">
+					<div class="rule"></div>
+					oR
+					<div class="rule"></div>
+				</div>
+				<label>
+				  <input type="text" required/>
+				  <div class="label-text">Custom</div>
+				</label>
+			</div>
+			<div class="password"></div>
 		</div>
 	</div>
-	<div class="password"></div>
 </body>
 </html>

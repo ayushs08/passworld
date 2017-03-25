@@ -2,7 +2,7 @@ $(document).ready(function(){
 angular.module('myApp', []).controller('myCtrl', function($scope){
   
 
-$scope.colors = [purple, red, yellow, blue, orange, pink];
+$scope.colors = ["purple", "red", "yellow", "blue", "orange", "pink"];
 
 $scope.flavorDict1 = ["path", "rabbit", "dress", "page", "replied", "bus", "product", "sky", "wonder" ]; 
 $scope.flavorDict2 = ["river", "river", "chapter", "respect", "medicine", "outside", "available", "replace", "life" ]; 
@@ -19,9 +19,8 @@ var lock = new PatternLock('#patternHolder',{
     }
 });
 
-
-$scope.generate = function(){
-
+$scope.hover = function(){
+	$(this).css("background","green");
 }
 });
 
