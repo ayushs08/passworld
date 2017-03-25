@@ -11,26 +11,31 @@ $scope.flavorDict4 = ["swim", "substance", "fill", "black", "use", "pet", "high"
 $scope.flavorDict5 = ["until", "second", "motion", "hair", "purple", "charge", "represent", "enjoy", "more" ]; 
 $scope.flavorDict6 = ["single", "shall", "musical", "dirt", "speech", "gentle", "plastic", "affect", "break" ]; 
 
-var total;
+var total = "";
+$scope.num = "";
 var lock = new PatternLock('#patternHolder',{
 	allowRepeat: false,
-	// delimiter: "",
-    mapper: function(wordID){
-    	if ("undefined" !== typeof $scope.flavorDict1[(wordID)]){
-        	total=$scope.flavorDict1[(wordID)];
-        	console.log(total);
-    }
-    
-    total = "";
+	onDraw:function(pattern){
+        num = lock.getPattern();
+        generate(num);	
     }
 
 });
+
+
+function generate(num){
+		for(i=0;i<num.length;i++){
+			if ("undefined" !== typeof $scope.flavorDict1[num[i]]){
+			total += $scope.flavorDict1[num[i]];
+		}
+		}		
+    	console.log(num);
+    	console.log(total);
+    }
 });
 });
 
-
-
-
-
-
-
+// #TODO: 1) Utilize all 6 word lists for different colors.
+// 	   2) Decide custom hash/color algorithm.
+// 	   3) Display password
+// 	   4) $scope.hash
