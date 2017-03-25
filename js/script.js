@@ -2,7 +2,7 @@ $(document).ready(function(){
 angular.module('myApp', []).controller('myCtrl', function($scope){
   
 
-
+$scope.colors = [purple, red, yellow, blue, orange, pink];
 
 $scope.flavorDict1 = ["path", "rabbit", "dress", "page", "replied", "bus", "product", "sky", "wonder" ]; 
 $scope.flavorDict2 = ["river", "river", "chapter", "respect", "medicine", "outside", "available", "replace", "life" ]; 
@@ -13,11 +13,11 @@ $scope.flavorDict6 = ["single", "shall", "musical", "dirt", "speech", "gentle", 
 
 
 var lock = new PatternLock('#patternHolder',{
-    
-     mapper: {1:$scope.flavorDict1[0],2:$scope.flavorDict1[1],3:$scope.flavorDict1[2],4:$scope.flavorDict1[3],5:$scope.flavorDict1[4],6:$scope.flavorDict1[5],7:$scope.flavorDict1[6],8:$scope.flavorDict1[7],9:$scope.flavorDict1[8]}
-
+	allowRepeat: false,
+    mapper: function(wordID){
+        console.log($scope.flavorDict1[(wordID)]);
+    }
 });
-console.log(lock);
 
 
 $scope.generate = function(){
