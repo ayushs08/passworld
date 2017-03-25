@@ -11,23 +11,24 @@ $scope.flavorDict4 = ["swim", "substance", "fill", "black", "use", "pet", "high"
 $scope.flavorDict5 = ["until", "second", "motion", "hair", "purple", "charge", "represent", "enjoy", "more" ]; 
 $scope.flavorDict6 = ["single", "shall", "musical", "dirt", "speech", "gentle", "plastic", "affect", "break" ]; 
 
-
+var total;
 var lock = new PatternLock('#patternHolder',{
 	allowRepeat: false,
+	// delimiter: "",
     mapper: function(wordID){
-        console.log($scope.flavorDict1[(wordID)]);
+    	if ("undefined" !== typeof $scope.flavorDict1[(wordID)]){
+        	total=$scope.flavorDict1[(wordID)];
+        	console.log(total);
     }
+    
+    total = "";
+    }
+
+});
+});
 });
 
-$scope.hover = function(){
-	$(this).css("background","green");
-}
-});
 
-
-
-console.log("askds");
-});
 
 
 
