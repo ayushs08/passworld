@@ -3,14 +3,31 @@
 <head>
 	<title>Passworld</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="patternLock/patternLock-master/patternLock.css">
-	<script src="js/script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|ABeeZee" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="patternLock/patternLock-master/patternLock.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<div class="nav">
+		<ul>
+			<li>
+				<i class="fa fa-connectdevelop"></i>PassWorld
+			</li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="pattern">
+			<div id="patternHolder"></div>
+		</div>
+		<div class="flavors"></div>
+	</div>
+	<div class="password"></div>
 </body>
 </html>
