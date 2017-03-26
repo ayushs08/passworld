@@ -5,7 +5,7 @@ body, html{
 	width: 100%;
 	background: #252830;
 	color: #f44336;
-	font-family: 'ABeeZee', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	overflow: hidden;
 }
 *{
@@ -23,7 +23,7 @@ ul{
 	padding: 0 1em;
 	align-items: center;
 	list-style-type: none;
-	letter-spacing: 0.4rem;
+	letter-spacing: 0.1rem;
 }
 .nav ul li i{
 	padding-right: 0.5rem;
