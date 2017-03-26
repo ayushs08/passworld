@@ -54,6 +54,7 @@ var lock = new PatternLock('#patternHolder',{
 	onDraw:function(pattern){
         num = lock.getPattern();
         generate(num);
+        total="";
     }
 
 });
@@ -72,7 +73,3 @@ function generate(num){
 });
 });
 
-// #TODO: 1) Utilize all 6 word lists for different colors.
-// 	   2) Decide custom hash/color algorithm.
-// 	   3) Display password
-// 	   4) $scope.hash
