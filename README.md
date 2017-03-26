@@ -14,11 +14,11 @@ You can also:
 
 
 
-> "Fantastic, I'm totally blown away by Passworld."  - Jack F.
+> "Fantastic, I'm totally blown away by Passworld."  - Neil Lasrado
 
 and
 
-> "This is unbelievable. I got a girlfriend and a much better life after using Passworld." -  Valmik J.
+> "This is unbelievable. After using Passworld my buisness skyrocketed!" -  Valmik J.
 
 
 
