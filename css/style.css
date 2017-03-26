@@ -73,6 +73,8 @@ ul{
 .flavors ul{
 	height: auto;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	margin: 5em 0 1em 0;
 }
@@ -83,6 +85,7 @@ ul{
 	margin: 1em 2.75em; 
 	padding: 1em;
 	cursor: pointer;
+	transition: all, 0.5s;
 }
 .flavors .or{
 	width: 100%;
@@ -99,10 +102,15 @@ ul{
 .password{
 	/*border: 1px solid orange;*/
 	height: 40%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-
-
+.password .text{
+	font-size: 3em;
+	color: #26C6DA;
+}
 
 input{
   font-size: 1.5em;
@@ -143,3 +151,21 @@ input:valid + .label-text{
   font-size: 1.2em;
   margin-bottom: 0.25em;
 }	
+
+@media (max-width: 768px){
+	.nav ul {
+		padding-top: 4vh;
+		justify-content: center;
+	}
+	.nav ul li:nth-child(1){
+		font-size: 3em;
+		width: 1.2em;
+	}
+	.nav ul li:nth-child(1) span,
+	.nav ul li:nth-child(2){
+		display: none;
+	}
+	.main{
+		display: block;
+	}
+}

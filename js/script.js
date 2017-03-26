@@ -2,7 +2,14 @@ $(document).ready(function(){
 angular.module('myApp', []).controller('myCtrl', function($scope){
   
 
-$scope.colors = ["purple", "red", "yellow", "blue", "orange", "pink"];
+$scope.colors = [
+	{name:'purple',hex:'#9C27B0'},
+	{name:'red',hex:'#f44336'},
+	{name:'yellow',hex:'#FFEB3B'},
+	{name:'blue',hex:'#2196F3'},
+	{name:'orange',hex:'#FF9800'},
+	{name:'green',hex:'#4CAF50'}
+];
 
 $scope.flavorDict1 = ["path", "rabbit", "dress", "page", "replied", "bus", "product", "sky", "wonder" ]; 
 $scope.flavorDict2 = ["river", "river", "chapter", "respect", "medicine", "outside", "available", "replace", "life" ]; 
@@ -32,6 +39,7 @@ function generate(num){
     	console.log(num);
     	console.log(total);
     }
+
 });
 });
 
