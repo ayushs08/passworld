@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 angular.module('myApp', []).controller('myCtrl', function($scope){
 
 $(".password .tip").hide();
