@@ -1,6 +1,7 @@
 $(document).ready(function(){
 angular.module('myApp', []).controller('myCtrl', function($scope){
-  
+
+$(".password .tip").hide();
 
 $scope.colors = [
 	{name:'purple',hex:'#9C27B0'},
@@ -54,6 +55,9 @@ var lock = new PatternLock('#patternHolder',{
 	onDraw:function(pattern){
         num = lock.getPattern();
         generate(num);
+        $(".flavors").css("height","60%");
+        $(".password").css("height","40%");
+        $(".password .tip").show();
     }
 
 });
