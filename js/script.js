@@ -30,7 +30,7 @@ $scope.num = "";
 
 
 $scope.select = function(e){
-
+	total += e;
 	if ($scope.num !== "") {
 		generate(num);
 	}
@@ -73,7 +73,9 @@ function generate(num){
 			total += $scope.flavor[num[i]];
 			}
 		}
-		$scope.password = total;
+		if($scope.hash){
+			total += $scope.hash;
+		}
     	$(".password .text").html(total);
     }
 });
