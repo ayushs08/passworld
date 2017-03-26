@@ -8,8 +8,8 @@ Passworld is a static, mobile-ready, AngularJS powered password generator.
 
 
 You can also:
-  - Generate a two-password scheme
   - remember your new passwords
+  - personalize your password
 
 
 
@@ -18,7 +18,7 @@ You can also:
 
 and
 
-> "This is unbelievable. After using Passworld my buisness skyrocketed!" -  Rick E.
+> "This is unbelievable. I got a girlfriend and a much better life after using Passworld." -  Valmik J.
 
 
 
