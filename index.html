@@ -25,17 +25,20 @@
 	<div class="main">
 		<div class="col-left">
 			<div class="pattern">
-				<div class="tip">Step 1: Draw your pattern</div>
+				<div class="tip">Step 2: Draw your pattern</div>
 				<div id="patternHolder"></div>
 			</div>
 		</div>
 		<div class="col-right">
 			<div class="flavors">
-				<div class="tip">Step 2: Pick your flavor</div>
+				<div class="tip">Step 1: Pick your flavor</div>
 				<ul>
-					<li ng-repeat="color in colors" ng-click="select(color.name)" id="{{ color.name }}" style="border: 1px solid {{ color.hex }}; color: {{ color.hex }};">
-						{{ color.name }}
-					</li>
+					<li>purple</li>
+					<li>red</li>
+					<li>yellow</li>
+					<li>blue</li>
+					<li>orange</li>
+					<li>green</li>
 				</ul>
 				<div class="or">
 					<div class="rule"></div>
@@ -48,7 +51,7 @@
 				</label>
 			</div>
 			<div class="password">
-				<div class="tip">Step 3: Click to copy</div>
+				<div class="tip">Step 3: Copy your new password</div>
 				<div class="text"></div>
 			</div>
 		</div>

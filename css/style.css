@@ -91,6 +91,30 @@ ul{
 	cursor: pointer;
 	transition: all, 0.5s;
 }
+.flavors ul li:nth-child(1){
+	border: 1px solid #9C27B0;
+	color: #9C27B0;
+}
+.flavors ul li:nth-child(2){
+	border: 1px solid #f44336;
+	color: #f44336;
+}
+.flavors ul li:nth-child(3){
+	border: 1px solid #FFEB3B;
+	color: #FFEB3B;
+}
+.flavors ul li:nth-child(4){
+	border: 1px solid #2196F3;
+	color: #2196F3;
+}
+.flavors ul li:nth-child(5){
+	border: 1px solid #FF9800;
+	color: #FF9800;
+}
+.flavors ul li:nth-child(6){
+	border: 1px solid #4CAF50;
+	color: #4CAF50;
+}
 .flavors .or{
 	width: 100%;
 	display: flex;
