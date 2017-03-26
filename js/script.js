@@ -22,15 +22,24 @@ $scope.flavorDict4 = ["swim", "substance", "fill", "black", "use", "pet", "high"
 $scope.flavorDict5 = ["until", "second", "motion", "hair", "purple", "charge", "represent", "enjoy", "more", "car" ]; 
 $scope.flavorDict6 = ["single", "shall", "musical", "dirt", "speech", "gentle", "plastic", "affect", "break", "orbit" ]; 
 
+$scope.hover;
+
+var total = "";
+$(".flavors ul li").click(function(){
+	total += $(this).html();
+	$scope.hover = $(this).css("border-color");
+	$(this).css("background",$scope.hover);
+	$(this).css("color","white");
+	$(this).siblings().css("background","none");
+});
+
 
 $scope.flavor = $scope.flavorDict1;
-var total = "";
 $scope.password;
 $scope.num = "";
 
 
 $scope.select = function(e){
-	total += e;
 	if ($scope.num !== "") {
 		generate(num);
 	}
