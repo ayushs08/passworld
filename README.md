@@ -14,7 +14,7 @@ You can also:
 
 
 
-> "Fantastic, I'm totally blown away by Passworld."  - Neil Lasrado
+> "Fantastic, I'm totally blown away by Passworld."  - Neil L.
 
 and
 
