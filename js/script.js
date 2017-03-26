@@ -66,14 +66,17 @@ var lock = new PatternLock('#patternHolder',{
 	onDraw:function(pattern){
         num = lock.getPattern();
         generate(num);
+        
         $(".flavors").css("height","60%");
         $(".password").css("height","40%");
         $(".password .tip").show();
+        
         total="";
     }
 
 });
 
+$scope.test = "";
 
 function generate(num){
 		num = num.toString();
