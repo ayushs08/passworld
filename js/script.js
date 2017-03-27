@@ -76,8 +76,6 @@ var lock = new PatternLock('#patternHolder',{
 
 });
 
-$scope.test = "";
-
 function generate(num){
 		num = num.toString();
 		for(i=0;i<=num.length;i++){
