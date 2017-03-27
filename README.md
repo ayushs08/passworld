@@ -2,28 +2,18 @@
 Passworld is a static, mobile-ready, AngularJS powered password generator.
 
 ![Screenshot](screenshot.png)
-
-
-
-
   - Generates passwords for humans
   - Colorful customisation options
-
 
 You can also:
   - remember your new passwords
   - personalize your password
 
-
-
-
 > "Fantastic, I'm totally blown away by Passworld."  - Neil L.
 
 and
 
-> "This is unbelievable. After using Passworld my buisness skyrocketed!" -  Valmik J.
-
-
+> "This is unbelievable. After using Passworld my business skyrocketed!" -  Valmik J.
 
 
 ### Tech
@@ -47,9 +37,6 @@ $ git clone https://github.com/ayushs08/passworld.git
 ```
 
 Open index.html in your preferred browser to run the application.
-
-
-
 
 
 License
